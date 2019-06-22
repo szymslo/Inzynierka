@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Smogomierz</title>
+    <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
+    <script src="scripts/clock.js" defer></script>
+    <script src="scripts/airquality.js" defer></script>
+    <script src="scripts/chartdht.js" defer></script>
+    <script src="scripts/chartpms.js" defer></script>
+</head>
+
+<body>
+    <div class="jumbotron text-center">
+        <h1 class=display-4>Pomiary jakości powietrza</h1>
+        <p class="lead">Z czujników DHT22 oraz PMS7003</p>
+    </div>
+    <div class="container text-center" id="clock">
+        <h5 id="data"></h5>
+        <h4 id="czas"></h4>
+        <br>
+    </div>
+    <div class="container" id="pomiary">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card card-body text-center">
+                    <img class="card-img-top img-fluid" src="images/temperature.jpeg" alt="temperatura" style="height:237px">
+                    <h4 class="card-title">Temperatura powietrza</h4>
+                    <br>
+                    <div class = "container" id="temp">
+                    </div>     
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card card-body text-center">
+                    <img class="card-img-top img-fluid" src="images/pollution.jpeg" alt="zanieczyszczenie" style="height:200px">
+                    <h4 class="card-title">Zanieczyszczenie powietrza</h4>
+                    <br>
+                    <div class = "container" id="pm">
+                    </div>           
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card card-body text-center">
+                    <img class="card-img-top img-fluid" src="images/humidity.jpeg" alt="wilgotnosc" style="height:237px">
+                    <h4 class="card-title">Wilgotność powietrza</h4>
+                    <br>
+                    <div class = "container" id="wilg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid rounded-top" id="tlo">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <br>
+                <h3 id="jakosc"></h3>
+                <h3><span class="badge badge-light" id="norma"></span></h3>
+                <br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container" id="chart-container">
+        <div class="row">
+            <div class="col-sm-6">
+                <canvas id="wykresdht">
+                </canvas>
+            </div>
+            <div class="col-sm-6">
+                <canvas id="wykrespms">
+                </canvas>
+            </div>
+        </div>
+    </div>
+    <br>
+</body>
+
+</html>
