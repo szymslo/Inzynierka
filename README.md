@@ -1,2 +1,1 @@
-# inzynierka
-Dane pomiarowe z czujników PMS7003 (zanieczyszczenie powietrza pyłami zawieszonymi PM2.5 i PM10) oraz DHT22 (temperatura i wilgotność powietrza), prezentowane w formie strony internetowej. Urządzenie oparte na płytce NodeMCU v3 z mikrokontrolerem ESP8266.
+Measurement data from sensors PMS7003 (air pollution by particulate matter PM2.5 and PM10) and DHT22 (air temperature and humidity), presented in a web app. Device based on NodeMCU v3 board with ESP8266 microcontroller.
