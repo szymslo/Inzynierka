@@ -11,11 +11,11 @@ DHT dht(DHTPIN, DHTTYPE); //obiekt na czujnik dht
 Pmsx003 pms(5, 4); //obiekt na czujnik pms
 
 //nazwa sieci wifi i hasło
-const char* nazwa = "2.4G-Vectra-WiFi-76A73A";
-const char* haslo = "244003543";
+const char* nazwa = "***";
+const char* haslo = "***";
 
 //serwer na który będą wysyłane dane (localhost)
-const char *host = "192.168.0.18";
+const char *host = "***";
 
 void setup()
 {
