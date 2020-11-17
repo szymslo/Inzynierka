@@ -11,11 +11,11 @@ DHT dht(DHTPIN, DHTTYPE); //obiekt na czujnik dht
 Pmsx003 pms(5, 4); //obiekt na czujnik pms
 
 //nazwa sieci wifi i hasło
-const char* nazwa = "***";
-const char* haslo = "***";
+const char* nazwa = "*****";
+const char* haslo = "*****";
 
 //serwer na który będą wysyłane dane (localhost)
-const char *host = "***";
+const char *host = "*****";
 
 void setup()
 {
