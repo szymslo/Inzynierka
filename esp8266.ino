@@ -84,7 +84,7 @@ void loop()
 
       //wysyłanie wartości na serwer
       dhtPost = "temp=" + String(temp) + "&wilg=" + String(wilg);
-      http.begin("http://192.168.0.18/add.php");
+      http.begin("***");
       http.addHeader("Content-Type", "application/x-www-form-urlencoded");
       int httpCode = http.POST(dhtPost);
       String payload = http.getString();
