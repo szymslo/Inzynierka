@@ -2,4 +2,4 @@
 
 
 # DEPRECATED OLD PROJECT
-## This project is deprecated. Planning to completely remake it as React SPA with Firebase backend
+## This project is deprecated. Planning to completely remake it as React SPA with Firebase
